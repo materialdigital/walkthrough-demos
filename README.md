@@ -13,7 +13,7 @@ walkthrough-demos/
 ├── data-transformation/
 │   ├── yarrrml/            # YARRRML/RML mapping example
 │   ├── ottr/               # OTTR template-based transformation example
-│   ├── robot/     # Robot template-based transformation example
+│   ├── robot/              # Robot template-based transformation example
 │   ├── python-rdflib/      # RDF generation using Python and RDFLib
 │   └── python-template/    # Python template-based RDF generation example
 └── README.md
