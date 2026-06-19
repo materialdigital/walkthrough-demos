@@ -4,9 +4,9 @@
 # - supply the YARRRML file as the one and only argument
 #
 # Example:
-#   ./map.sh rules.yml
+#   ./map.sh tensile.yml
 
-YARRRML_FILE=$1
+YARRRML_FILE=tensile.yml
 RML_FILE=temp.rml.ttl
 
 docker run --rm -it -v $(pwd):/data rmlio/yarrrml-parser:1.10.0 -i /data/${YARRRML_FILE} -o /data/${RML_FILE}

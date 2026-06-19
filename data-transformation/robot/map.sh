@@ -10,5 +10,6 @@ if [ ! -f pmdco.owl ]; then
     wget "https://w3id.org/pmd/co/" -o pmdco.owl
 fi
 
-
 java -jar robot.jar template --input pmdco.owl  --template template.tsv --output result.ttl
+
+cat result.ttl
