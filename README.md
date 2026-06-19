@@ -30,3 +30,16 @@ The **data-transformation** examples illustrate multiple strategies for generati
 
 The examples use a very simple CSV-based data as a simple educational use case.
 
+## Usage
+
+Each folder contains a `map.sh` or `map.py` file which can be executed to run the scripts. 
+
+```
+cd data-transformation/<folder> 
+sh run.sh
+```
+
+```
+cd data-transformation/<folder> 
+python map.py
+```
