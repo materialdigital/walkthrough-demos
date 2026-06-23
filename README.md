@@ -113,6 +113,16 @@ At a glance:
 | Large-scale KG projects | ⭐                | ⭐⭐⭐             | ⭐⭐⭐⭐⭐       | ⭐⭐⭐⭐  | ⭐⭐    |
 | Learning RDF concepts   | ⭐⭐⭐⭐⭐            | ⭐⭐⭐⭐            | ⭐⭐⭐         | ⭐⭐⭐   | ⭐⭐⭐   |
 
+### Strengths and weaknesses
+
+| Method | Strengths | Weaknesses |
+|--------|-----------|------------|
+| python-template | trivial, no dependencies, full control | no validation → easily produces invalid RDF; scales poorly |
+| python-rdflib | real graph object, guaranteed syntactically valid, good for logic/branching | imperative, pattern scattered across many `g.add()` calls |
+| ottr | declarative, pattern defined once, compact data, datatype typing | Java tooling, custom stOTTR syntax |
+| yarrrml / RML | W3C-aligned standard, declarative, works directly from CSV/JSON/DB, ETL-ready | heavy runtime (Docker / large jars), YAML learning curve |
+| robot | produces a full OWL ontology, label→IRI resolution | tied to the OWL/ROBOT workflow, the spreadsheet gets unwieldy quickly |
+
 ### Practical Recommendation
 
 For most real-world semantic data integration projects:
