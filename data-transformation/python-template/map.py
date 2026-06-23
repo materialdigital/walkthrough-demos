@@ -1,6 +1,8 @@
 
 
 prefix="""
+@prefix ex: <http://example.com/ns#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix tensile_strength: <https://w3id.org/pmd/tto/TTO_0000053> .
 @prefix has_quality: <http://purl.obolibrary.org/obo/RO_0000086> .
 @prefix has_role: <http://purl.obolibrary.org/obo/RO_0000087> .
