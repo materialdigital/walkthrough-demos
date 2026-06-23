@@ -39,8 +39,31 @@ Each folder contains a `map.sh` or `map.py` file which can be executed to run th
 cd data-transformation/<folder> 
 sh run.sh
 ```
-
 ```
 cd data-transformation/<folder> 
 python map.py
 ```
+
+## Comparison Table
+
+| Criterion               | Python Templates | Python + RDFLib | YARRRML/RML | OTTR  |
+| ----------------------- | ---------------- | --------------- | ----------- | ----- |
+| Easy to start           | ⭐⭐⭐⭐⭐            | ⭐⭐⭐⭐            | ⭐⭐⭐         | ⭐⭐    |
+| RDF correctness         | ⭐⭐               | ⭐⭐⭐⭐⭐           | ⭐⭐⭐⭐⭐       | ⭐⭐⭐⭐⭐ |
+| Reusability             | ⭐                | ⭐⭐              | ⭐⭐⭐⭐        | ⭐⭐⭐⭐⭐ |
+| Maintainability         | ⭐⭐               | ⭐⭐⭐             | ⭐⭐⭐⭐        | ⭐⭐⭐⭐⭐ |
+| Non-programmer friendly | ⭐                | ⭐               | ⭐⭐⭐⭐        | ⭐⭐⭐   |
+| Standards-based         | ⭐                | ⭐⭐              | ⭐⭐⭐⭐⭐       | ⭐⭐⭐⭐  |
+| Large-scale KG projects | ⭐                | ⭐⭐⭐             | ⭐⭐⭐⭐⭐       | ⭐⭐⭐⭐  |
+| Learning RDF concepts   | ⭐⭐⭐⭐⭐            | ⭐⭐⭐⭐            | ⭐⭐⭐         | ⭐⭐⭐   |
+
+
+
+## Practical Recommendation
+
+For most real-world semantic data integration projects:
+
+* YARRRML/RML is usually the best default choice because mappings are declarative, portable, and maintainable.
+* Python + RDFLib is preferable when transformations involve substantial computation, data cleaning, external APIs, or complex business rules.
+* OTTR is particularly valuable when the RDF model contains many recurring graph patterns and you want template reuse.
+* Plain Python string templates are mainly useful for teaching, experimentation, and very small one-off transformations.
