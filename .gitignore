@@ -1,1 +1,13 @@
 .DS_Store
+
+# Downloaded tooling (large binaries — do not commit)
+*.jar
+
+# Downloaded ontology
+data-transformation/robot/pmdco.owl
+
+# Generated transformation outputs
+data-transformation/ottr/tensile.ttl
+data-transformation/ottr/tensile-blank.ttl
+data-transformation/robot/result.ttl
+data-transformation/yarrrml/temp.rml.ttl

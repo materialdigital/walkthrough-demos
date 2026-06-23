@@ -7,7 +7,7 @@ fi
 
 # download recent pmdco
 if [ ! -f pmdco.owl ]; then
-    wget "https://w3id.org/pmd/co/" -o pmdco.owl
+    wget --header="Accept: application/rdf+xml" -O pmdco.owl "https://w3id.org/pmd/co/"
 fi
 
 java -jar robot.jar template --input pmdco.owl  --template template.tsv --output result.ttl
